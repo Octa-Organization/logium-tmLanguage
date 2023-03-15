@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>logium</string>
+	</array>
+
+	<key>name</key>
+	<string>Logium</string>
+
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(axiom)\b</string>
+			<key>name</key>
+			<string>storage.modifier.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b[A-Za-zΑαΒβΓγΔδΕΕεεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω][ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁⱽᵂₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ]?\b</string>
+			<key>name</key>
+			<string>variable.other.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[∀∃∄]|∃!</string>
+			<key>name</key>
+			<string>keyword.quantifier.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[A-Za-z\p{Sm}][A-Za-z0-9_-]+[ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁⱽᵂₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ]?\b</string>
+			<key>name</key>
+			<string>entity.name.type.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>//.*</string>
+			<key>name</key>
+			<string>comment.line.double-slash.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string># .*</string>
+			<key>name</key>
+			<string>comment.line.number-sign.logium</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.slash_star.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[0-9]+(\.[0-9]+)?</string>
+			<key>name</key>
+			<string>constant.numeric.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[&lt;&gt;\x{22A2}:.]</string>
+			<key>name</key>
+			<string>keyword.other.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\p{Ps}|\p{Pe}</string>
+			<key>name</key>
+			<string>keyword.bracket.logium</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\p{Sm}</string>
+			<key>name</key>
+			<string>keyword.operator.logium</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.logium</string>
+	<key>uuid</key>
+	<string>90D41AED-4E05-4694-814E-581E3656F590</string>
+</dict>
+</plist>

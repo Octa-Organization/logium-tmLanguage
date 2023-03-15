@@ -1,0 +1,55 @@
+{
+  "fileTypes": [
+    "logium"
+  ],
+  "name": "Logium",
+  "patterns": [
+    {
+      "match": "\\b(axiom)\\b",
+      "name": "storage.modifier.logium"
+    },
+    {
+      "match": "\\b[A-Za-zΑαΒβΓγΔδΕΕεεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω][ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁⱽᵂₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ]?\\b",
+      "name": "variable.other.logium"
+    },
+    {
+      "match": "[∀∃∄]|∃!",
+      "name": "keyword.quantifier.logium"
+    },
+    {
+      "match": "[A-Za-z\\p{Sm}][A-Za-z0-9_-]+[ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁⱽᵂₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ]?\\b",
+      "name": "entity.name.type.logium"
+    },
+    {
+      "match": "//.*",
+      "name": "comment.line.double-slash.logium"
+    },
+    {
+      "match": "# .*",
+      "name": "comment.line.number-sign.logium"
+    },
+    {
+      "begin": "/\\*",
+      "end": "\\*/",
+      "name": "comment.block.slash_star.logium"
+    },
+    {
+      "match": "[0-9]+(\\.[0-9]+)?",
+      "name": "constant.numeric.logium"
+    },
+    {
+      "match": "[<>\\x{22A2}:.]",
+      "name": "keyword.other.logium"
+    },
+    {
+      "match": "\\p{Ps}|\\p{Pe}",
+      "name": "keyword.bracket.logium"
+    },
+    {
+      "match": "\\p{Sm}",
+      "name": "keyword.operator.logium"
+    }
+  ],
+  "scopeName": "source.logium",
+  "uuid": "90D41AED-4E05-4694-814E-581E3656F590"
+}

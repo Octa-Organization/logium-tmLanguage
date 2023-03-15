@@ -1,0 +1,38 @@
+{
+  "Proof": {
+    "prefix": ["proof",],
+    "body": ["$1: $2 ⊢ $3","  1. $4 <$5>"],
+  },
+  "Line": {
+    "prefix": ["line",],
+    "body": ["$1. $2 <$3>"],
+  },
+  "Turnstile (⊢)": {
+    "prefix": ["turnstile","tee","§|-","§turnstile"],
+    "body": ["⊢"],
+  },
+  "Conjunction (∧)": {
+    "prefix": ["and","land","conjunction","§and"],
+    "body": ["∧"],
+  },
+  "Disjunction (∨)": {
+    "prefix": ["or","lor","disjunction","§or"],
+    "body": ["∨"],
+  },
+  "Implication (→)": {
+    "prefix": ["implies","implication","rightarrow","§implies"],
+    "body": ["→"],
+  },
+  "Negation (¬)": {
+    "prefix": ["not","negation","§not"],
+    "body": ["¬"],
+  },
+  "Universal quantification (∀)": {
+    "prefix": ["all","forall","universal","§all"],
+    "body": ["∀"],
+  },
+  "Existential quantification (∃)": {
+    "prefix": ["exists","existential","§exists"],
+    "body": ["∃"],
+  },
+}
